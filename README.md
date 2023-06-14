@@ -3,8 +3,8 @@ This repo contains two examples. One is a fraud analisis worker for a banking wo
 The other is a full workflow as code example.
 
 Examples:
-2. [Banking Example](banking/README.md)
-3. [User Info Example](emailsms/README.md)
+2. [Banking Example](src/banking/README.md)
+3. [User Info Example](src/emailsms/README.md)
 
 
 ### Running Example
