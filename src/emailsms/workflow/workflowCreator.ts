@@ -14,6 +14,7 @@ import {
 import { clientPromise } from "../client/apiUtil";
 
 export async function createAndRegisterWorkflow() {
+  // docs-marker-start-1
   const getUserDetailsTask = simpleTask(GET_USER_INFO, GET_USER_INFO, {
     userId: "${workflow.input.userId}",
   });
@@ -44,5 +45,6 @@ export async function createAndRegisterWorkflow() {
   client.metadataResource.create(wf, true);
 
   return wf;
-}
 
+  // docs-marker-end-1
+}
