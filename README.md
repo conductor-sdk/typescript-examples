@@ -26,3 +26,8 @@ Run the main programs using ts-node
 ts-node src/banking/main.ts
 ts-node src/emailandsms/main.ts
 ```
+
+### The Files that run the workflow and worker:
+
+1. [Banking Example](src/banking/main.ts)
+2. [User Info Example](src/emailsms/main.ts)
