@@ -4,7 +4,9 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "@io-orkes/conductor-javascript": "^1.0.1"
+    "@io-orkes/conductor-javascript": "^1.0.1",
+    "@types/uuid": "^9.0.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
