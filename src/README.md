@@ -2,6 +2,11 @@
 This repo contains two examples. One is a fraud analisis worker for a banking workflow. 
 The other is a full workflow as code example.
 
+Examples:
+2. [Banking Example](banking/README.md)
+3. [User Info Example](emailsms/README.md)
+
+
 ### Running Example
 
 install dependencies using `yarn`
