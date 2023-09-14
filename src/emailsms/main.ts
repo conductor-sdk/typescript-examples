@@ -5,6 +5,9 @@ import {
   executeWorkflowAsync,
 } from "./workflow/workflowUtil";
 import { getWorkflowExecutionUrl } from "./client/apiUtil";
+import {Headers} from 'node-fetch'
+//@ts-ignore
+globalThis.Headers = Headers
 
 async function main() {
   const wf = await createAndRegisterWorkflow();

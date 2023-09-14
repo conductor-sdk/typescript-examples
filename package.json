@@ -4,9 +4,10 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "@io-orkes/conductor-javascript": "^1.2.2",
+    "@io-orkes/conductor-javascript": "^1.2.3",
     "@types/uuid": "^9.0.2",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "node-fetch": "^2.6.12"
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
@@ -19,10 +20,14 @@
     "ts-jest": "^29.0.5",
     "ts-node": "^10.7.0",
     "tsup": "^5.12.6",
-    "typescript": "^4.6.4"
+    "typescript": "^4.6.4",
+    "@types/node-fetch": "^2.6.4"
+  },
+  "scripts":{
+    "build":"tsup src/emailsms/main.ts"
   },
   "tsup": {
-    "target": "node18",
+    "target": "node16",
     "sourcemap": true,
     "format": [
       "esm",
