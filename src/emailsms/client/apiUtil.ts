@@ -9,6 +9,6 @@ const serverSettings = {
 export const clientPromise = orkesConductorClient(serverSettings);
 
 export function getWorkflowExecutionUrl(workflowId: string) {
-  const baseUrl = `${process.env.CONDUCTOR_SERVER_URL}`;
+  const baseUrl = `${process.env.SERVER_URL}`;
   return `${baseUrl.substring(0, baseUrl.length - 4)}/execution/${workflowId}`;
 }
