@@ -29,7 +29,7 @@ async function runSync() {
   console.log("Workflow Execution Completed");
   console.log(`Workflow Id: ${workflowRun.workflowId}`);
   console.log(`Workflow Status: ${workflowRun.status}`);
-  console.log(`Workflow Output: ${workflowRun.output}`);
+  console.log(`Workflow Output: ${JSON.stringify(workflowRun.output)}`);
 
   if (workflowRun?.workflowId != null) {
     console.log(
@@ -57,7 +57,7 @@ async function runAsync() {
   console.log("Workflow Execution Completed");
   console.log(`Workflow Id: ${workflowStatus.workflowId}`);
   console.log(`Workflow Status: ${workflowStatus.status}`);
-  console.log(`Workflow Output: ${workflowStatus.output}`);
+  console.log(`Workflow Output: ${JSON.stringify(workflowStatus.output)}`);
   if (workflowStatus?.workflowId != null) {
     console.log(
       `Workflow Execution Flow UI: ${getWorkflowExecutionUrl(
