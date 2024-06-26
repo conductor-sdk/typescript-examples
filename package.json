@@ -4,7 +4,7 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "@io-orkes/conductor-javascript": "^2.1.1-alpha",
+    "@io-orkes/conductor-javascript": "^2.1.1",
     "@types/uuid": "^9.0.2",
     "uuid": "^9.0.0"
   },
@@ -20,6 +20,10 @@
     "ts-node": "^10.7.0",
     "tsup": "^5.12.6",
     "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "build-email":"tsup src/emailsms/main.ts",
+    "build-banking":"tsup src/banking/main.ts"
   },
   "tsup": {
     "target": "node18",

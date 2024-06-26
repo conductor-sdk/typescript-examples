@@ -70,4 +70,4 @@ async function runAsync() {
   );
 }
 
-//main();
+main();
